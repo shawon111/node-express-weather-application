@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root {
+    --primary-color: #1e272e;
+    --secondary-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.secondary-text {
+    color: var(--secondary-color);
+}
+
+.header {
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.navbar {
+    color: #fff;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--secondary-color);
+}
+
+.navbar-toggler {
+    color: #fff;
+    background-color: #fff;
+}
+
+.rotate-element {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.home-hero {
+    padding: 80px 0px;
+    height: 90vh;
+    min-height: 90vh;
+    max-height: 100vh;
+}
+
+.weather-page {
+    min-height: 80vh;
+}
+
+.weather-wrapper {
+    padding: 0px 15%;
+}
+
+.card-header {
+    background-color: #000;
+}
+
+.card-body {
+    padding: 4rem 1rem;
+}
+
+#temp {
+    margin-top: 2rem;
+    font-size: 5rem;
+}
+
+#weatherIcon i {
+    font-size: 5rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .weather-wrapper {
+        padding: 0px 8%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .weather-wrapper {
+        padding: 0px 4%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .weather-wrapper {
+        padding: 0px 0%;
+    }
+}
